@@ -44,6 +44,8 @@ class Scrap {
           rutsWithoutUniqueKeys.push(ruts[i].rutFormatted);
         }
       }
+      console.log('ruts with unique keys:', rutsWithUniqueKeys);
+      console.log('ruts without unique keys:', rutsWithoutUniqueKeys);
       return {arrayResponse, rutsWithUniqueKeys, rutsWithoutUniqueKeys};
     } catch (error) {
       console.error(error);
